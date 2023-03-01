@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Rank-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="MoreViewController" customModule="CricFeedV01" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ptS-eK-nAO" userLabel="bannerView" customClass="GradientBackgroundView" customModule="CricFeedV01" customModuleProvider="target">
+                                <rect key="frame" x="10" y="59" width="373" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ranking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhy-0T-kyN">
+                                        <rect key="frame" x="15" y="10.666666666666673" width="97.666666666666671" height="28.666666666666671"/>
+                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="22"/>
+                                        <color key="textColor" red="0.96078431610000004" green="0.96078431610000004" blue="0.96078431610000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.18039217590000001" green="0.20784312490000001" blue="0.23921570180000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.16380470459999999" green="0.1708450748" blue="0.23921570180000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Fpd-c0-gas"/>
+                                    <constraint firstItem="fhy-0T-kyN" firstAttribute="leading" secondItem="ptS-eK-nAO" secondAttribute="leading" constant="15" id="GH4-Zy-9WA"/>
+                                    <constraint firstItem="fhy-0T-kyN" firstAttribute="centerY" secondItem="ptS-eK-nAO" secondAttribute="centerY" id="PrP-oe-xFg"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GZt-3Q-TYl" userLabel="SettingsView">
+                                <rect key="frame" x="10" y="124" width="373" height="630"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hdW-AQ-AvR">
+                                        <rect key="frame" x="0.0" y="0.0" width="373" height="630"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96078431610000004" green="0.96078431610000004" blue="0.96078431610000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="hdW-AQ-AvR" secondAttribute="trailing" id="3sK-BM-E1u"/>
+                                    <constraint firstItem="hdW-AQ-AvR" firstAttribute="top" secondItem="GZt-3Q-TYl" secondAttribute="top" id="HwC-mX-Qu4"/>
+                                    <constraint firstAttribute="bottom" secondItem="hdW-AQ-AvR" secondAttribute="bottom" id="QAX-YM-HJV"/>
+                                    <constraint firstItem="hdW-AQ-AvR" firstAttribute="leading" secondItem="GZt-3Q-TYl" secondAttribute="leading" id="x0M-11-15j"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GZt-3Q-TYl" firstAttribute="top" secondItem="ptS-eK-nAO" secondAttribute="bottom" constant="15" id="3tu-CG-mZh"/>
+                            <constraint firstItem="ptS-eK-nAO" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="4Ri-Do-xRF"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="GZt-3Q-TYl" secondAttribute="bottom" constant="15" id="7j6-Gc-UWZ"/>
+                            <constraint firstItem="ptS-eK-nAO" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="E2v-YS-Vun"/>
+                            <constraint firstItem="GZt-3Q-TYl" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="tXT-66-eMe"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="GZt-3Q-TYl" secondAttribute="trailing" constant="10" id="wEP-M8-F8B"/>
+                            <constraint firstItem="ptS-eK-nAO" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="xaE-4x-IjF"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Rank" image="trophy.fill" catalog="system" id="C8M-Gz-wQ9"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="moreBanner" destination="ptS-eK-nAO" id="KvL-U0-2R8"/>
+                        <outlet property="rankingTable" destination="hdW-AQ-AvR" id="7xk-ct-DDM"/>
+                        <outlet property="settingsView" destination="GZt-3Q-TYl" id="I18-MA-uak"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="124.42748091603053" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="trophy.fill" catalog="system" width="128" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Matches-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="MatchesViewController" customModule="CricFeedV01" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f6c-ZM-lE4" userLabel="BannerView" customClass="GradientBackgroundView" customModule="CricFeedV01" customModuleProvider="target">
+                                <rect key="frame" x="10" y="59" width="373" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cricket.ball" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="6bf-Ob-WRr">
+                                        <rect key="frame" x="5" y="8" width="50.333333333333336" height="34.666666666666671"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CricFeed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5sq-go-G8L">
+                                        <rect key="frame" x="64.333333333333343" y="12" width="89.333333333333343" height="26"/>
+                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rd8-2o-eHu" userLabel="Search">
+                                        <rect key="frame" x="313.33333333333331" y="8" width="49.666666666666686" height="34.333333333333336"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="magnifyingglass" catalog="system"/>
+                                        <connections>
+                                            <action selector="searchBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="1Ca-3S-b3J"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.18039217590000001" green="0.20784312490000001" blue="0.23921570180000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="6bf-Ob-WRr" firstAttribute="width" secondItem="f6c-ZM-lE4" secondAttribute="width" multiplier="0.135" id="2jV-87-qxG"/>
+                                    <constraint firstItem="6bf-Ob-WRr" firstAttribute="leading" secondItem="f6c-ZM-lE4" secondAttribute="leading" constant="5" id="9x5-V5-FjN"/>
+                                    <constraint firstAttribute="trailing" secondItem="rd8-2o-eHu" secondAttribute="trailing" constant="10" id="Jdo-KN-Zcb"/>
+                                    <constraint firstItem="5sq-go-G8L" firstAttribute="leading" secondItem="6bf-Ob-WRr" secondAttribute="trailing" constant="9" id="ig7-Kr-ly1"/>
+                                    <constraint firstItem="6bf-Ob-WRr" firstAttribute="height" secondItem="f6c-ZM-lE4" secondAttribute="height" multiplier="0.721" id="peA-Pr-qa6"/>
+                                    <constraint firstAttribute="height" constant="50" id="qjc-0s-BUU"/>
+                                    <constraint firstItem="5sq-go-G8L" firstAttribute="centerY" secondItem="f6c-ZM-lE4" secondAttribute="centerY" id="quX-yV-bCA"/>
+                                    <constraint firstItem="6bf-Ob-WRr" firstAttribute="centerY" secondItem="f6c-ZM-lE4" secondAttribute="centerY" id="uJD-9M-EXL"/>
+                                    <constraint firstItem="rd8-2o-eHu" firstAttribute="centerY" secondItem="f6c-ZM-lE4" secondAttribute="centerY" id="xt0-am-4sb"/>
+                                </constraints>
+                            </view>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fyY-aa-S7m">
+                                <rect key="frame" x="10" y="114" width="373" height="32"/>
+                                <segments>
+                                    <segment title="Live"/>
+                                    <segment title="Upcoming"/>
+                                    <segment title="Finished"/>
+                                </segments>
+                                <connections>
+                                    <action selector="switchScreen:" destination="Y6W-OH-hqX" eventType="valueChanged" id="LYJ-KE-DwT"/>
+                                </connections>
+                            </segmentedControl>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ii6-jH-vOh">
+                                <rect key="frame" x="0.0" y="145" width="393" height="624"/>
+                                <connections>
+                                    <segue destination="NcB-gW-ETV" kind="embed" id="log-pL-W1I"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BJ8-3h-BUC">
+                                <rect key="frame" x="0.0" y="145" width="393" height="624"/>
+                                <connections>
+                                    <segue destination="mQ5-yd-cRp" kind="embed" id="EOe-XN-8sz"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="grh-zj-ylv">
+                                <rect key="frame" x="0.0" y="145" width="393" height="624"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="GZV-ga-RFI" kind="embed" id="YGF-Q2-mDw"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="f6c-ZM-lE4" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="58h-J9-stc"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Ii6-jH-vOh" secondAttribute="bottom" id="J6E-nv-A4A"/>
+                            <constraint firstItem="grh-zj-ylv" firstAttribute="top" secondItem="fyY-aa-S7m" secondAttribute="bottom" id="Qm0-rc-mdK"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="grh-zj-ylv" secondAttribute="trailing" id="QpN-yi-Ihe"/>
+                            <constraint firstItem="Ii6-jH-vOh" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="VXZ-5u-7il"/>
+                            <constraint firstItem="BJ8-3h-BUC" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Y4s-wp-kAx"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="grh-zj-ylv" secondAttribute="bottom" id="ZTu-iE-JUY"/>
+                            <constraint firstItem="f6c-ZM-lE4" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="a4b-dB-9HC"/>
+                            <constraint firstItem="fyY-aa-S7m" firstAttribute="top" secondItem="f6c-ZM-lE4" secondAttribute="bottom" constant="5" id="gtq-dP-Oje"/>
+                            <constraint firstItem="f6c-ZM-lE4" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="ijO-S0-3C8"/>
+                            <constraint firstItem="Ii6-jH-vOh" firstAttribute="top" secondItem="fyY-aa-S7m" secondAttribute="bottom" id="iy8-TU-VoS"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="BJ8-3h-BUC" secondAttribute="bottom" id="kwe-Zi-1R7"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="BJ8-3h-BUC" secondAttribute="trailing" id="ri9-qo-AdU"/>
+                            <constraint firstItem="fyY-aa-S7m" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="sbF-hy-Yge"/>
+                            <constraint firstItem="BJ8-3h-BUC" firstAttribute="top" secondItem="fyY-aa-S7m" secondAttribute="bottom" id="sud-Xy-C1Q"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="fyY-aa-S7m" secondAttribute="trailing" constant="10" id="tvn-LC-Lad"/>
+                            <constraint firstItem="grh-zj-ylv" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="u6N-Cr-wOO"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Ii6-jH-vOh" secondAttribute="trailing" id="yoP-y1-FhN"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Matches" image="figure.cricket" catalog="system" id="DrH-7s-KCv"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="bannerView" destination="f6c-ZM-lE4" id="fXC-zN-yVd"/>
+                        <outlet property="matchFinished" destination="BJ8-3h-BUC" id="Rvi-hd-S9p"/>
+                        <outlet property="matchLive" destination="grh-zj-ylv" id="Uou-Mc-G0d"/>
+                        <outlet property="matchUpcomming" destination="Ii6-jH-vOh" id="ua8-WK-GSE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="124.42748091603053" y="-34.507042253521128"/>
+        </scene>
+        <!--Live View Controller-->
+        <scene sceneID="TkZ-9R-1Av">
+            <objects>
+                <viewController id="GZV-ga-RFI" customClass="LiveViewController" customModule="CricFeedV01" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bum-RK-OYl">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="624"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="GYj-Aw-fmm">
+                                <rect key="frame" x="0.0" y="59" width="393" height="565"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vsr-2T-g5w"/>
+                        <constraints>
+                            <constraint firstItem="GYj-Aw-fmm" firstAttribute="top" secondItem="vsr-2T-g5w" secondAttribute="top" id="Ahc-qx-jUx"/>
+                            <constraint firstItem="vsr-2T-g5w" firstAttribute="trailing" secondItem="GYj-Aw-fmm" secondAttribute="trailing" id="V5k-aX-uKv"/>
+                            <constraint firstItem="vsr-2T-g5w" firstAttribute="bottom" secondItem="GYj-Aw-fmm" secondAttribute="bottom" id="c6j-Il-jhx"/>
+                            <constraint firstItem="GYj-Aw-fmm" firstAttribute="leading" secondItem="vsr-2T-g5w" secondAttribute="leading" id="qTM-Qm-LEs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="liveTable" destination="GYj-Aw-fmm" id="uHh-pf-wOp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wpR-Wj-Q6E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-801" y="687"/>
+        </scene>
+        <!--Upcoming View Controller-->
+        <scene sceneID="xis-Rx-xnG">
+            <objects>
+                <viewController id="NcB-gW-ETV" customClass="UpcomingViewController" customModule="CricFeedV01" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zbh-NI-2J5">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="624"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="kb4-Nh-hga">
+                                <rect key="frame" x="0.0" y="59" width="393" height="565"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YE3-eW-F0S"/>
+                        <constraints>
+                            <constraint firstItem="YE3-eW-F0S" firstAttribute="bottom" secondItem="kb4-Nh-hga" secondAttribute="bottom" id="8gy-ZN-gax"/>
+                            <constraint firstItem="kb4-Nh-hga" firstAttribute="leading" secondItem="YE3-eW-F0S" secondAttribute="leading" id="LcI-mU-N0N"/>
+                            <constraint firstItem="kb4-Nh-hga" firstAttribute="top" secondItem="YE3-eW-F0S" secondAttribute="top" id="NTJ-eB-bbk"/>
+                            <constraint firstItem="YE3-eW-F0S" firstAttribute="trailing" secondItem="kb4-Nh-hga" secondAttribute="trailing" id="UJ6-Ps-chA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="upcomingTable" destination="kb4-Nh-hga" id="ucd-wb-ovs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MFT-8J-Xem" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="126" y="687"/>
+        </scene>
+        <!--Finished View Controller-->
+        <scene sceneID="uQa-86-Stk">
+            <objects>
+                <viewController id="mQ5-yd-cRp" customClass="FinishedViewController" customModule="CricFeedV01" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A2v-EN-uiZ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="624"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="7Q8-8A-gJk">
+                                <rect key="frame" x="0.0" y="59" width="393" height="565"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="q6L-5M-L1v"/>
+                        <constraints>
+                            <constraint firstItem="q6L-5M-L1v" firstAttribute="trailing" secondItem="7Q8-8A-gJk" secondAttribute="trailing" id="26e-Mg-jmd"/>
+                            <constraint firstItem="7Q8-8A-gJk" firstAttribute="top" secondItem="q6L-5M-L1v" secondAttribute="top" id="57O-Cp-i5i"/>
+                            <constraint firstItem="7Q8-8A-gJk" firstAttribute="leading" secondItem="q6L-5M-L1v" secondAttribute="leading" id="5ec-ik-sP7"/>
+                            <constraint firstItem="q6L-5M-L1v" firstAttribute="bottom" secondItem="7Q8-8A-gJk" secondAttribute="bottom" id="vxv-rP-I3M"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="finishedTable" destination="7Q8-8A-gJk" id="0rY-RM-47Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9R5-XT-IYF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1053" y="687"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cricket.ball" catalog="system" width="128" height="123"/>
+        <image name="figure.cricket" catalog="system" width="89" height="128"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FixtureSeriesTable" rowHeight="124" id="KGk-i7-Jjw" customClass="FixtureSeriesTable" customModule="CricFeedV01" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="386" height="124"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="386" height="124"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="diO-7D-phy">
+                        <rect key="frame" x="10" y="10" width="366" height="104"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trash.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="73H-vM-aJl">
+                                <rect key="frame" x="10" y="11" width="70" height="82.666666666666657"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="sD3-GY-w2R"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="twenty twenty World Cup " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qUy-Yf-8hy">
+                                <rect key="frame" x="89.999999999999986" y="10" width="224.66666666666663" height="25"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2023-12-01 15:59:59" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RQU-Fq-cJl">
+                                <rect key="frame" x="90" y="45" width="163" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="separatorColor"/>
+                        <constraints>
+                            <constraint firstItem="RQU-Fq-cJl" firstAttribute="leading" secondItem="73H-vM-aJl" secondAttribute="trailing" constant="10" id="0HL-7v-h7r"/>
+                            <constraint firstItem="73H-vM-aJl" firstAttribute="leading" secondItem="diO-7D-phy" secondAttribute="leading" constant="10" id="23p-P4-WId"/>
+                            <constraint firstItem="RQU-Fq-cJl" firstAttribute="top" secondItem="qUy-Yf-8hy" secondAttribute="bottom" constant="10" id="Jcg-dQ-2MX"/>
+                            <constraint firstItem="73H-vM-aJl" firstAttribute="top" secondItem="diO-7D-phy" secondAttribute="top" constant="10" id="eSc-qV-pQj"/>
+                            <constraint firstAttribute="bottom" secondItem="73H-vM-aJl" secondAttribute="bottom" constant="10" id="oba-uC-v4y"/>
+                            <constraint firstItem="qUy-Yf-8hy" firstAttribute="top" secondItem="diO-7D-phy" secondAttribute="top" constant="10" id="pSA-RK-cpz"/>
+                            <constraint firstItem="qUy-Yf-8hy" firstAttribute="leading" secondItem="73H-vM-aJl" secondAttribute="trailing" constant="10" id="uar-FO-XPE"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="diO-7D-phy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="ols-cR-Qqz"/>
+                    <constraint firstAttribute="trailing" secondItem="diO-7D-phy" secondAttribute="trailing" constant="10" id="uXk-Fo-Px6"/>
+                    <constraint firstItem="diO-7D-phy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="ypR-ST-RDd"/>
+                    <constraint firstAttribute="bottom" secondItem="diO-7D-phy" secondAttribute="bottom" constant="10" id="z8L-yN-HFs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="seriesDate" destination="RQU-Fq-cJl" id="r4Y-aR-I5G"/>
+                <outlet property="seriesName" destination="qUy-Yf-8hy" id="8HO-PM-FaC"/>
+                <outlet property="seriesThumb" destination="73H-vM-aJl" id="tn0-nr-onj"/>
+                <outlet property="seriesView" destination="diO-7D-phy" id="KfS-na-MgT"/>
+            </connections>
+            <point key="canvasLocation" x="9.1603053435114496" y="16.901408450704228"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="trash.circle" catalog="system" width="128" height="123"/>
+        <systemColor name="separatorColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

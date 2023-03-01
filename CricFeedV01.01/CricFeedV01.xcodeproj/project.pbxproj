@@ -1,0 +1,641 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		890772E4299DF26E00C4D36F /* HTTPCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890772E3299DF26E00C4D36F /* HTTPCalls.swift */; };
+		890772E6299E002700C4D36F /* ShowAllMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890772E5299E002700C4D36F /* ShowAllMatch.swift */; };
+		890772E8299E043500C4D36F /* UpComingMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890772E7299E043500C4D36F /* UpComingMatch.swift */; };
+		890772EA299E0CDD00C4D36F /* PreviousMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890772E9299E0CDD00C4D36F /* PreviousMatch.swift */; };
+		890FF45F29975B72009AF439 /* FixtureDateTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890FF45D29975B72009AF439 /* FixtureDateTable.swift */; };
+		890FF46029975B72009AF439 /* FixtureDateTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = 890FF45E29975B72009AF439 /* FixtureDateTable.xib */; };
+		890FF46529976653009AF439 /* FixtureSeriesTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890FF46329976653009AF439 /* FixtureSeriesTable.swift */; };
+		890FF46629976653009AF439 /* FixtureSeriesTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = 890FF46429976653009AF439 /* FixtureSeriesTable.xib */; };
+		890FF4702999DC9C009AF439 /* MatchMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890FF46E2999DC9C009AF439 /* MatchMenuCell.swift */; };
+		890FF4712999DC9C009AF439 /* MatchMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 890FF46F2999DC9C009AF439 /* MatchMenuCell.xib */; };
+		890FF48A2999EC28009AF439 /* HttpUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890FF4892999EC28009AF439 /* HttpUtility.swift */; };
+		890FF48C2999F972009AF439 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890FF48B2999F972009AF439 /* CustomView.swift */; };
+		890FF48E299A01E8009AF439 /* GradientBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890FF48D299A01E8009AF439 /* GradientBackgroundView.swift */; };
+		890FF490299A1061009AF439 /* FixtureViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890FF48F299A1061009AF439 /* FixtureViewControllerExtension.swift */; };
+		890FF492299A11C6009AF439 /* MatchesViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890FF491299A11C6009AF439 /* MatchesViewControllerExtension.swift */; };
+		890FF49A299A6F74009AF439 /* ShowLeagueList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890FF499299A6F74009AF439 /* ShowLeagueList.swift */; };
+		89716AD32996129A005EE06A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89716AD22996129A005EE06A /* AppDelegate.swift */; };
+		89716AD52996129A005EE06A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89716AD42996129A005EE06A /* SceneDelegate.swift */; };
+		89716ADA2996129A005EE06A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89716AD82996129A005EE06A /* Main.storyboard */; };
+		89716ADD2996129A005EE06A /* CricFeedV01.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 89716ADB2996129A005EE06A /* CricFeedV01.xcdatamodeld */; };
+		89716ADF2996129B005EE06A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89716ADE2996129B005EE06A /* Assets.xcassets */; };
+		89716AE22996129B005EE06A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89716AE02996129B005EE06A /* LaunchScreen.storyboard */; };
+		89716AED299613E0005EE06A /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89716AEC299613E0005EE06A /* MoreViewController.swift */; };
+		89716AEF299613FC005EE06A /* MatchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89716AEE299613FC005EE06A /* MatchesViewController.swift */; };
+		89716AF129961415005EE06A /* FixturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89716AF029961414005EE06A /* FixturesViewController.swift */; };
+		89716AF3299615F5005EE06A /* MoreStory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89716AF2299615F5005EE06A /* MoreStory.storyboard */; };
+		89716AF529961615005EE06A /* MatchStory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89716AF429961615005EE06A /* MatchStory.storyboard */; };
+		89716AF729961629005EE06A /* FixStory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89716AF629961629005EE06A /* FixStory.storyboard */; };
+		89716AFA29961C31005EE06A /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89716AF929961C31005EE06A /* TabBarViewController.swift */; };
+		89716B0929974A1A005EE06A /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89716B0829974A1A005EE06A /* Constant.swift */; };
+		89D37BBF299A73D700E2AD85 /* CodableForLeague.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D37BBE299A73D700E2AD85 /* CodableForLeague.swift */; };
+		89D37BC6299C80DF00E2AD85 /* ShowUpcomingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D37BC5299C80DE00E2AD85 /* ShowUpcomingList.swift */; };
+		89D37BC8299CDC5600E2AD85 /* CodableForUpcoming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D37BC7299CDC5600E2AD85 /* CodableForUpcoming.swift */; };
+		FB6C5AD980D65994ACEA88B4 /* Pods_CricFeedV01.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC07A4F52CEEF517346976FF /* Pods_CricFeedV01.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5C1F6E92C049795D4E24327D /* Pods-CricFeedV01.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CricFeedV01.debug.xcconfig"; path = "Target Support Files/Pods-CricFeedV01/Pods-CricFeedV01.debug.xcconfig"; sourceTree = "<group>"; };
+		890772E3299DF26E00C4D36F /* HTTPCalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPCalls.swift; sourceTree = "<group>"; };
+		890772E5299E002700C4D36F /* ShowAllMatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAllMatch.swift; sourceTree = "<group>"; };
+		890772E7299E043500C4D36F /* UpComingMatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpComingMatch.swift; sourceTree = "<group>"; };
+		890772E9299E0CDD00C4D36F /* PreviousMatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousMatch.swift; sourceTree = "<group>"; };
+		890FF45D29975B72009AF439 /* FixtureDateTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixtureDateTable.swift; sourceTree = "<group>"; };
+		890FF45E29975B72009AF439 /* FixtureDateTable.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FixtureDateTable.xib; sourceTree = "<group>"; };
+		890FF46329976653009AF439 /* FixtureSeriesTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixtureSeriesTable.swift; sourceTree = "<group>"; };
+		890FF46429976653009AF439 /* FixtureSeriesTable.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FixtureSeriesTable.xib; sourceTree = "<group>"; };
+		890FF46E2999DC9C009AF439 /* MatchMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchMenuCell.swift; sourceTree = "<group>"; };
+		890FF46F2999DC9C009AF439 /* MatchMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchMenuCell.xib; sourceTree = "<group>"; };
+		890FF4892999EC28009AF439 /* HttpUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpUtility.swift; sourceTree = "<group>"; };
+		890FF48B2999F972009AF439 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		890FF48D299A01E8009AF439 /* GradientBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackgroundView.swift; sourceTree = "<group>"; };
+		890FF48F299A1061009AF439 /* FixtureViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixtureViewControllerExtension.swift; sourceTree = "<group>"; };
+		890FF491299A11C6009AF439 /* MatchesViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesViewControllerExtension.swift; sourceTree = "<group>"; };
+		890FF499299A6F74009AF439 /* ShowLeagueList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowLeagueList.swift; sourceTree = "<group>"; };
+		89716ACF2996129A005EE06A /* CricFeedV01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CricFeedV01.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		89716AD22996129A005EE06A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		89716AD42996129A005EE06A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		89716AD92996129A005EE06A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		89716ADC2996129A005EE06A /* CricFeedV01.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CricFeedV01.xcdatamodel; sourceTree = "<group>"; };
+		89716ADE2996129B005EE06A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		89716AE12996129B005EE06A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		89716AE32996129B005EE06A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89716AEC299613E0005EE06A /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		89716AEE299613FC005EE06A /* MatchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesViewController.swift; sourceTree = "<group>"; };
+		89716AF029961414005EE06A /* FixturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixturesViewController.swift; sourceTree = "<group>"; };
+		89716AF2299615F5005EE06A /* MoreStory.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MoreStory.storyboard; sourceTree = "<group>"; };
+		89716AF429961615005EE06A /* MatchStory.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MatchStory.storyboard; sourceTree = "<group>"; };
+		89716AF629961629005EE06A /* FixStory.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FixStory.storyboard; sourceTree = "<group>"; };
+		89716AF929961C31005EE06A /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		89716B0829974A1A005EE06A /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		89D37BBE299A73D700E2AD85 /* CodableForLeague.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableForLeague.swift; sourceTree = "<group>"; };
+		89D37BC5299C80DE00E2AD85 /* ShowUpcomingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ShowUpcomingList.swift; path = ../../../../../../../../../Users/bjit/Documents/GitHub/iOS_Saifur_30016_FinalProject_CricFeed/CricFeedV01/CricFeedV01/DataModels/ShowUpcomingList.swift; sourceTree = SDKROOT; };
+		89D37BC7299CDC5600E2AD85 /* CodableForUpcoming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableForUpcoming.swift; sourceTree = "<group>"; };
+		CC07A4F52CEEF517346976FF /* Pods_CricFeedV01.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CricFeedV01.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D08C0124A3407E8ADBB6021D /* Pods-CricFeedV01.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CricFeedV01.release.xcconfig"; path = "Target Support Files/Pods-CricFeedV01/Pods-CricFeedV01.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		89716ACC2996129A005EE06A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB6C5AD980D65994ACEA88B4 /* Pods_CricFeedV01.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		461B817EDC85A3801A53FA87 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C1F6E92C049795D4E24327D /* Pods-CricFeedV01.debug.xcconfig */,
+				D08C0124A3407E8ADBB6021D /* Pods-CricFeedV01.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		890FF46729976671009AF439 /* SeriesTable */ = {
+			isa = PBXGroup;
+			children = (
+				890FF46329976653009AF439 /* FixtureSeriesTable.swift */,
+				890FF46429976653009AF439 /* FixtureSeriesTable.xib */,
+			);
+			path = SeriesTable;
+			sourceTree = "<group>";
+		};
+		890FF4722999DCAB009AF439 /* MatchMenue */ = {
+			isa = PBXGroup;
+			children = (
+				890FF46E2999DC9C009AF439 /* MatchMenuCell.swift */,
+				890FF46F2999DC9C009AF439 /* MatchMenuCell.xib */,
+			);
+			path = MatchMenue;
+			sourceTree = "<group>";
+		};
+		890FF498299A6F52009AF439 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				890FF499299A6F74009AF439 /* ShowLeagueList.swift */,
+				890772E7299E043500C4D36F /* UpComingMatch.swift */,
+				890772E9299E0CDD00C4D36F /* PreviousMatch.swift */,
+				89D37BC5299C80DE00E2AD85 /* ShowUpcomingList.swift */,
+				890772E5299E002700C4D36F /* ShowAllMatch.swift */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		89716AC62996129A005EE06A = {
+			isa = PBXGroup;
+			children = (
+				89716AD12996129A005EE06A /* CricFeedV01 */,
+				89716AD02996129A005EE06A /* Products */,
+				461B817EDC85A3801A53FA87 /* Pods */,
+				EB61EF545DA60C25E1B0D296 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		89716AD02996129A005EE06A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				89716ACF2996129A005EE06A /* CricFeedV01.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		89716AD12996129A005EE06A /* CricFeedV01 */ = {
+			isa = PBXGroup;
+			children = (
+				89716AD22996129A005EE06A /* AppDelegate.swift */,
+				89716AD42996129A005EE06A /* SceneDelegate.swift */,
+				89716B0829974A1A005EE06A /* Constant.swift */,
+				89D37BC4299B504200E2AD85 /* DesignClasses */,
+				89D37BC2299B501700E2AD85 /* URLSession */,
+				890FF498299A6F52009AF439 /* DataModels */,
+				89716ADE2996129B005EE06A /* Assets.xcassets */,
+				89716AE02996129B005EE06A /* LaunchScreen.storyboard */,
+				89716AFB29961C5A005EE06A /* TabBarView */,
+				89716AE32996129B005EE06A /* Info.plist */,
+				89716ADB2996129A005EE06A /* CricFeedV01.xcdatamodeld */,
+				89716AEB2996139A005EE06A /* More */,
+				89716AE929961345005EE06A /* Matches */,
+				89716AEA29961385005EE06A /* Fixtures */,
+			);
+			path = CricFeedV01;
+			sourceTree = "<group>";
+		};
+		89716AE929961345005EE06A /* Matches */ = {
+			isa = PBXGroup;
+			children = (
+				89716AEE299613FC005EE06A /* MatchesViewController.swift */,
+				890FF491299A11C6009AF439 /* MatchesViewControllerExtension.swift */,
+				89716AF429961615005EE06A /* MatchStory.storyboard */,
+				890FF4722999DCAB009AF439 /* MatchMenue */,
+			);
+			path = Matches;
+			sourceTree = "<group>";
+		};
+		89716AEA29961385005EE06A /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				89716AF029961414005EE06A /* FixturesViewController.swift */,
+				890FF48F299A1061009AF439 /* FixtureViewControllerExtension.swift */,
+				89716AF629961629005EE06A /* FixStory.storyboard */,
+				89716B02299678BA005EE06A /* FixtureTable */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		89716AEB2996139A005EE06A /* More */ = {
+			isa = PBXGroup;
+			children = (
+				89716AEC299613E0005EE06A /* MoreViewController.swift */,
+				89716AF2299615F5005EE06A /* MoreStory.storyboard */,
+			);
+			name = More;
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		89716AFB29961C5A005EE06A /* TabBarView */ = {
+			isa = PBXGroup;
+			children = (
+				89716AF929961C31005EE06A /* TabBarViewController.swift */,
+				89716AD82996129A005EE06A /* Main.storyboard */,
+			);
+			path = TabBarView;
+			sourceTree = "<group>";
+		};
+		89716B02299678BA005EE06A /* FixtureTable */ = {
+			isa = PBXGroup;
+			children = (
+				890FF46729976671009AF439 /* SeriesTable */,
+				89716B0E29975A95005EE06A /* DateTable */,
+			);
+			path = FixtureTable;
+			sourceTree = "<group>";
+		};
+		89716B0E29975A95005EE06A /* DateTable */ = {
+			isa = PBXGroup;
+			children = (
+				890FF45D29975B72009AF439 /* FixtureDateTable.swift */,
+				890FF45E29975B72009AF439 /* FixtureDateTable.xib */,
+			);
+			path = DateTable;
+			sourceTree = "<group>";
+		};
+		89D37BC2299B501700E2AD85 /* URLSession */ = {
+			isa = PBXGroup;
+			children = (
+				890FF4892999EC28009AF439 /* HttpUtility.swift */,
+				890772E3299DF26E00C4D36F /* HTTPCalls.swift */,
+				89D37BBE299A73D700E2AD85 /* CodableForLeague.swift */,
+				89D37BC7299CDC5600E2AD85 /* CodableForUpcoming.swift */,
+			);
+			path = URLSession;
+			sourceTree = "<group>";
+		};
+		89D37BC4299B504200E2AD85 /* DesignClasses */ = {
+			isa = PBXGroup;
+			children = (
+				890FF48B2999F972009AF439 /* CustomView.swift */,
+				890FF48D299A01E8009AF439 /* GradientBackgroundView.swift */,
+			);
+			path = DesignClasses;
+			sourceTree = "<group>";
+		};
+		EB61EF545DA60C25E1B0D296 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC07A4F52CEEF517346976FF /* Pods_CricFeedV01.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		89716ACE2996129A005EE06A /* CricFeedV01 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89716AE62996129B005EE06A /* Build configuration list for PBXNativeTarget "CricFeedV01" */;
+			buildPhases = (
+				B6629162C3F42209BE107E5A /* [CP] Check Pods Manifest.lock */,
+				89716ACB2996129A005EE06A /* Sources */,
+				89716ACC2996129A005EE06A /* Frameworks */,
+				89716ACD2996129A005EE06A /* Resources */,
+				A548900A48B5B8A3D1BAC328 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CricFeedV01;
+			productName = CricFeedV01;
+			productReference = 89716ACF2996129A005EE06A /* CricFeedV01.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		89716AC72996129A005EE06A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					89716ACE2996129A005EE06A = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 89716ACA2996129A005EE06A /* Build configuration list for PBXProject "CricFeedV01" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 89716AC62996129A005EE06A;
+			productRefGroup = 89716AD02996129A005EE06A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				89716ACE2996129A005EE06A /* CricFeedV01 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		89716ACD2996129A005EE06A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89716AF529961615005EE06A /* MatchStory.storyboard in Resources */,
+				89716AE22996129B005EE06A /* LaunchScreen.storyboard in Resources */,
+				890FF4712999DC9C009AF439 /* MatchMenuCell.xib in Resources */,
+				890FF46029975B72009AF439 /* FixtureDateTable.xib in Resources */,
+				890FF46629976653009AF439 /* FixtureSeriesTable.xib in Resources */,
+				89716ADF2996129B005EE06A /* Assets.xcassets in Resources */,
+				89716ADA2996129A005EE06A /* Main.storyboard in Resources */,
+				89716AF729961629005EE06A /* FixStory.storyboard in Resources */,
+				89716AF3299615F5005EE06A /* MoreStory.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A548900A48B5B8A3D1BAC328 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CricFeedV01/Pods-CricFeedV01-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CricFeedV01/Pods-CricFeedV01-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CricFeedV01/Pods-CricFeedV01-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6629162C3F42209BE107E5A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CricFeedV01-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		89716ACB2996129A005EE06A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				890FF4702999DC9C009AF439 /* MatchMenuCell.swift in Sources */,
+				890772E6299E002700C4D36F /* ShowAllMatch.swift in Sources */,
+				890772E4299DF26E00C4D36F /* HTTPCalls.swift in Sources */,
+				890FF49A299A6F74009AF439 /* ShowLeagueList.swift in Sources */,
+				89D37BBF299A73D700E2AD85 /* CodableForLeague.swift in Sources */,
+				890772E8299E043500C4D36F /* UpComingMatch.swift in Sources */,
+				890FF45F29975B72009AF439 /* FixtureDateTable.swift in Sources */,
+				89D37BC6299C80DF00E2AD85 /* ShowUpcomingList.swift in Sources */,
+				89716AF129961415005EE06A /* FixturesViewController.swift in Sources */,
+				890FF48C2999F972009AF439 /* CustomView.swift in Sources */,
+				89716AEF299613FC005EE06A /* MatchesViewController.swift in Sources */,
+				890FF490299A1061009AF439 /* FixtureViewControllerExtension.swift in Sources */,
+				89716AED299613E0005EE06A /* MoreViewController.swift in Sources */,
+				89716ADD2996129A005EE06A /* CricFeedV01.xcdatamodeld in Sources */,
+				890FF48E299A01E8009AF439 /* GradientBackgroundView.swift in Sources */,
+				89716AFA29961C31005EE06A /* TabBarViewController.swift in Sources */,
+				89716AD32996129A005EE06A /* AppDelegate.swift in Sources */,
+				890FF48A2999EC28009AF439 /* HttpUtility.swift in Sources */,
+				890FF46529976653009AF439 /* FixtureSeriesTable.swift in Sources */,
+				890FF492299A11C6009AF439 /* MatchesViewControllerExtension.swift in Sources */,
+				890772EA299E0CDD00C4D36F /* PreviousMatch.swift in Sources */,
+				89D37BC8299CDC5600E2AD85 /* CodableForUpcoming.swift in Sources */,
+				89716B0929974A1A005EE06A /* Constant.swift in Sources */,
+				89716AD52996129A005EE06A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		89716AD82996129A005EE06A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89716AD92996129A005EE06A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		89716AE02996129B005EE06A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89716AE12996129B005EE06A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		89716AE42996129B005EE06A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		89716AE52996129B005EE06A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		89716AE72996129B005EE06A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C1F6E92C049795D4E24327D /* Pods-CricFeedV01.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CricFeedV01/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bjit.CricFeedV01;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		89716AE82996129B005EE06A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D08C0124A3407E8ADBB6021D /* Pods-CricFeedV01.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CricFeedV01/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bjit.CricFeedV01;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		89716ACA2996129A005EE06A /* Build configuration list for PBXProject "CricFeedV01" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89716AE42996129B005EE06A /* Debug */,
+				89716AE52996129B005EE06A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89716AE62996129B005EE06A /* Build configuration list for PBXNativeTarget "CricFeedV01" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89716AE72996129B005EE06A /* Debug */,
+				89716AE82996129B005EE06A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		89716ADB2996129A005EE06A /* CricFeedV01.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				89716ADC2996129A005EE06A /* CricFeedV01.xcdatamodel */,
+			);
+			currentVersion = 89716ADC2996129A005EE06A /* CricFeedV01.xcdatamodel */;
+			path = CricFeedV01.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 89716AC72996129A005EE06A /* Project object */;
+}

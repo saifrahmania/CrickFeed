@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Fixtures-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="FixturesViewController" customModule="CricFeedV01" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G8T-7b-4gN" userLabel="fixtureBanner" customClass="GradientBackgroundView" customModule="CricFeedV01" customModuleProvider="target">
+                                <rect key="frame" x="10" y="59" width="373" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fixture" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUl-cL-bm9">
+                                        <rect key="frame" x="15" y="10.666666666666673" width="82.666666666666671" height="28.666666666666671"/>
+                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="22"/>
+                                        <color key="textColor" red="0.96078431610000004" green="0.96078431610000004" blue="0.96078431610000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.16380470459999999" green="0.1708450748" blue="0.23921570180000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="JzP-0N-SqD"/>
+                                    <constraint firstItem="JUl-cL-bm9" firstAttribute="centerY" secondItem="G8T-7b-4gN" secondAttribute="centerY" id="piO-NN-wVg"/>
+                                    <constraint firstItem="JUl-cL-bm9" firstAttribute="leading" secondItem="G8T-7b-4gN" secondAttribute="leading" constant="15" id="z2h-bg-6sy"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gAb-wV-ZjE">
+                                <rect key="frame" x="10" y="112" width="373" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="RXk-ug-1rG"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Vmy-ok-XTX">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="H71-7B-fpL">
+                                <rect key="frame" x="10" y="167" width="373" height="602"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="G8T-7b-4gN" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="A1l-ba-jKr"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="H71-7B-fpL" secondAttribute="bottom" id="BxW-r2-s0h"/>
+                            <constraint firstItem="gAb-wV-ZjE" firstAttribute="top" secondItem="G8T-7b-4gN" secondAttribute="bottom" constant="3" id="CNN-r7-Rh5"/>
+                            <constraint firstItem="G8T-7b-4gN" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Czq-Zm-bUJ"/>
+                            <constraint firstItem="G8T-7b-4gN" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="HGD-V9-6mg"/>
+                            <constraint firstItem="H71-7B-fpL" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="IQr-0V-JOE"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="H71-7B-fpL" secondAttribute="trailing" constant="10" id="UTP-8J-Blb"/>
+                            <constraint firstItem="gAb-wV-ZjE" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="ZDc-a2-mH7"/>
+                            <constraint firstItem="gAb-wV-ZjE" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="vr8-9L-XsL"/>
+                            <constraint firstItem="H71-7B-fpL" firstAttribute="top" secondItem="gAb-wV-ZjE" secondAttribute="bottom" constant="5" id="wg5-gg-lE4"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Fixtures" image="calendar" catalog="system" id="C6P-Uj-M9D"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="fixtureBanner" destination="G8T-7b-4gN" id="ItI-qU-eOc"/>
+                        <outlet property="fixtureCollectionView" destination="gAb-wV-ZjE" id="2rX-0E-BjD"/>
+                        <outlet property="fixtureTableView" destination="H71-7B-fpL" id="x4I-Zi-qsR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-49.618320610687022" y="-37.323943661971832"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="calendar" catalog="system" width="128" height="107"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

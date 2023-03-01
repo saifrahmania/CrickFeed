@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Fixtures-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="FixturesViewController" customModule="CricFeedV01" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G8T-7b-4gN" userLabel="fixtureBanner" customClass="GradientBackgroundView" customModule="CricFeedV01" customModuleProvider="target">
+                                <rect key="frame" x="10" y="59" width="373" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fixture" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUl-cL-bm9">
+                                        <rect key="frame" x="15" y="10.666666666666673" width="82.666666666666671" height="28.666666666666671"/>
+                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="22"/>
+                                        <color key="textColor" red="0.96078431610000004" green="0.96078431610000004" blue="0.96078431610000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.16380470459999999" green="0.1708450748" blue="0.23921570180000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="JzP-0N-SqD"/>
+                                    <constraint firstItem="JUl-cL-bm9" firstAttribute="centerY" secondItem="G8T-7b-4gN" secondAttribute="centerY" id="piO-NN-wVg"/>
+                                    <constraint firstItem="JUl-cL-bm9" firstAttribute="leading" secondItem="G8T-7b-4gN" secondAttribute="leading" constant="15" id="z2h-bg-6sy"/>
+                                </constraints>
+                            </view>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="7dN-nu-xmd">
+                                <rect key="frame" x="0.0" y="114" width="393" height="32"/>
+                                <segments>
+                                    <segment title="Series"/>
+                                    <segment title="Matches"/>
+                                </segments>
+                                <connections>
+                                    <action selector="switchViews:" destination="Y6W-OH-hqX" eventType="valueChanged" id="ofW-27-NZ7"/>
+                                </connections>
+                            </segmentedControl>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zvl-X9-7Em">
+                                <rect key="frame" x="0.0" y="145" width="393" height="624"/>
+                                <connections>
+                                    <segue destination="3XS-kv-a0e" kind="embed" id="b2D-pe-HwL"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r0W-qy-m7t">
+                                <rect key="frame" x="0.0" y="145" width="393" height="624"/>
+                                <connections>
+                                    <segue destination="A6e-1L-ukl" kind="embed" id="YOa-Np-pBj"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="r0W-qy-m7t" secondAttribute="bottom" id="0l4-s6-6x0"/>
+                            <constraint firstItem="G8T-7b-4gN" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="A1l-ba-jKr"/>
+                            <constraint firstItem="r0W-qy-m7t" firstAttribute="top" secondItem="7dN-nu-xmd" secondAttribute="bottom" id="Ck0-W5-VGt"/>
+                            <constraint firstItem="G8T-7b-4gN" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Czq-Zm-bUJ"/>
+                            <constraint firstItem="G8T-7b-4gN" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="HGD-V9-6mg"/>
+                            <constraint firstItem="7dN-nu-xmd" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="UbN-Jl-PdD"/>
+                            <constraint firstItem="7dN-nu-xmd" firstAttribute="top" secondItem="G8T-7b-4gN" secondAttribute="bottom" constant="5" id="VZQ-FZ-zI6"/>
+                            <constraint firstItem="Zvl-X9-7Em" firstAttribute="top" secondItem="7dN-nu-xmd" secondAttribute="bottom" id="XZu-cb-Xyh"/>
+                            <constraint firstItem="r0W-qy-m7t" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="eIc-WV-C38"/>
+                            <constraint firstItem="7dN-nu-xmd" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="ggH-vP-IKe"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Zvl-X9-7Em" secondAttribute="trailing" id="hPK-aW-miE"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="r0W-qy-m7t" secondAttribute="trailing" id="inu-nd-tbx"/>
+                            <constraint firstItem="Zvl-X9-7Em" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="nE5-n5-J6y"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Zvl-X9-7Em" secondAttribute="bottom" id="wIp-hM-sPs"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Fixtures" image="calendar" catalog="system" id="C6P-Uj-M9D"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="fixtureBanner" destination="G8T-7b-4gN" id="ItI-qU-eOc"/>
+                        <outlet property="fixtureMatches" destination="Zvl-X9-7Em" id="Z7v-hZ-P6C"/>
+                        <outlet property="fixtureSeries" destination="r0W-qy-m7t" id="NJc-KX-bQI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-49.618320610687022" y="-37.323943661971832"/>
+        </scene>
+        <!--Fixture Series-->
+        <scene sceneID="dGu-Rz-aRI">
+            <objects>
+                <viewController id="A6e-1L-ukl" customClass="FixtureSeries" customModule="CricFeedV01" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Vz-Ms-yG8">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="624"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="r20-WF-Y09">
+                                <rect key="frame" x="16" y="59" width="361" height="565"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nzv-vf-xXm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="r20-WF-Y09" firstAttribute="leading" secondItem="2Vz-Ms-yG8" secondAttribute="leadingMargin" id="17P-xG-tim"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="r20-WF-Y09" secondAttribute="bottom" id="RRM-aD-iSn"/>
+                            <constraint firstItem="r20-WF-Y09" firstAttribute="top" secondItem="2Vz-Ms-yG8" secondAttribute="topMargin" id="Svp-aN-tPC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="r20-WF-Y09" secondAttribute="trailing" id="vPd-D7-IJx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="seriesTable" destination="r20-WF-Y09" id="7rh-Dd-PrB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="87C-7G-f3C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="813" y="618"/>
+        </scene>
+        <!--Fixture Matches-->
+        <scene sceneID="0zz-L0-44o">
+            <objects>
+                <viewController id="3XS-kv-a0e" customClass="FixtureMatches" customModule="CricFeedV01" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rg0-4h-UFR">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="624"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Gb1-eS-4kl">
+                                <rect key="frame" x="16" y="59" width="361" height="565"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wCJ-s6-NcL"/>
+                        <constraints>
+                            <constraint firstItem="Gb1-eS-4kl" firstAttribute="leading" secondItem="rg0-4h-UFR" secondAttribute="leadingMargin" id="17E-tf-SHV"/>
+                            <constraint firstItem="Gb1-eS-4kl" firstAttribute="top" secondItem="rg0-4h-UFR" secondAttribute="topMargin" id="5rf-Sg-8EI"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Gb1-eS-4kl" secondAttribute="bottom" id="aVV-N1-nyp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Gb1-eS-4kl" secondAttribute="trailing" id="iah-2q-cy8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="fixtureMatches" destination="Gb1-eS-4kl" id="eKH-2C-VYd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WhL-ZD-dEe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-755" y="632"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="calendar" catalog="system" width="128" height="107"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
