@@ -80,7 +80,7 @@ SportMonks offers standard REST APIs. Requests are sent with URLs and responses 
 ## Screenshots
 
 
-![App Screenshot](https://i.ibb.co/R7tb3SF/singletone.png)
+
 ![App Screenshot](https://i.ibb.co/q7wSyxj/Simulator-Screen-Shot-i-Phone-14-Pro-2023-02-26-at-22-08-52.png)
 ![App Screenshot](https://i.ibb.co/QM3PKyX/Simulator-Screen-Shot-i-Phone-14-Pro-2023-02-26-at-22-08-37.png)
 
