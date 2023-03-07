@@ -78,6 +78,37 @@ SportMonks offers standard REST APIs. Requests are sent with URLs and responses 
 
 
 ## Screenshots
+
+
+![App Screenshot](https://i.ibb.co/R7tb3SF/singletone.png)
+![App Screenshot](https://i.ibb.co/q7wSyxj/Simulator-Screen-Shot-i-Phone-14-Pro-2023-02-26-at-22-08-52.png)
+![App Screenshot](https://i.ibb.co/QM3PKyX/Simulator-Screen-Shot-i-Phone-14-Pro-2023-02-26-at-22-08-37.png)
+
+![App Screenshot](https://i.ibb.co/jR4vjZh/Simulator-Screen-Shot-i-Phone-14-Pro-2023-02-26-at-22-08-22.png)
+
+![App Screenshot](https://i.ibb.co/zRz5P0n/Simulator-Screen-Shot-i-Phone-14-Pro-2023-02-26-at-22-08-12.png)
+
+![App Screenshot](https://i.ibb.co/XbsswQc/Simulator-Screen-Shot-i-Phone-14-Pro-2023-02-26-at-22-08-06.png)
+
+![App Screenshot](https://i.ibb.co/Nxpk6nS/Simulator-Screen-Shot-i-Phone-14-Pro-2023-02-26-at-22-08-00.png)
+
+![App Screenshot](https://i.ibb.co/hm0cH2g/Simulator-Screen-Shot-i-Phone-14-Pro-2023-02-26-at-22-07-53.png)
+
+![App Screenshot](https://i.ibb.co/S6tGnSd/Simulator-Screen-Shot-i-Phone-14-Pro-2023-02-26-at-22-07-40.png)
+
+![App Screenshot](https://i.ibb.co/L6GV12L/Simulator-Screen-Shot-i-Phone-14-Pro-2023-02-26-at-22-07-37.png)
+
+![App Screenshot](https://i.ibb.co/K0fX3py/live-2.png)
+
+![App Screenshot](https://i.ibb.co/SRZ6Bwn/live.png)
+
+
+
+
+
+
+
+
 ![App Screenshot](https://raw.githubusercontent.com/saifrahmania/CrickFeed/937d6a3f4924cc820ce794470ca14c756ab6e312/ScreenShots/Simulator%20Screen%20Shot%20-%20iPhone%2014%20Pro%20-%202023-02-26%20at%2022.07.37.png?token=GHSAT0AAAAAAB7NDM6IJH4VMJQKUPHROOCYY764W3A)
 ![App Screenshot](https://raw.githubusercontent.com/saifrahmania/CrickFeed/937d6a3f4924cc820ce794470ca14c756ab6e312/ScreenShots/Simulator%20Screen%20Shot%20-%20iPhone%2014%20Pro%20-%202023-02-26%20at%2022.07.40.png?token=GHSAT0AAAAAAB7NDM6IWI74DWY4WUKLY4MUY764ZSQ)
 ![App Screenshot](https://raw.githubusercontent.com/saifrahmania/CrickFeed/937d6a3f4924cc820ce794470ca14c756ab6e312/ScreenShots/Simulator%20Screen%20Shot%20-%20iPhone%2014%20Pro%20-%202023-02-26%20at%2022.07.53.png?token=GHSAT0AAAAAAB7NDM6ISAE5GMEK34JAJVVWY7644PQ)
